@@ -1,0 +1,46 @@
+/* src/components/Navbar/Navbar.css */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+}
+.bar {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    margin: 6px 0;
+}
+.abierto .menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    z-index: 1;
+}
+.abierto .menu-icon {
+    display: flex;
+}
